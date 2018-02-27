@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Marina Kalyuzhnaya](https://up.htmlacademy.ru/htmlcss/20/user/195322).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/htmlcss/20/user/215761).
 
 ---
 
