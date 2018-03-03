@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Бронирование гостиницы в Седоне</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation__logo" href="index.html">
+          <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип сайта">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="info.html">Информация</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="gallery.html">Фото и видео</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="map.html">Карта штата</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link_current" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Поиск и бронирование гостиниц в Седоне</h1>
+      <section class="search-filters">
+        <h2 class="visually-hidden">Парамерты поиска гостиниц</h2>
+        <form name="filters" method="post" class="search-filters__form">
+        </form>
+      </section>
+      <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="search-results__desc">Найдено:
+          <span class="search-results__quantity">3</span>
+        </p>
+        <div class="sorting">
+          <h3 class="visually-hidden">Выбор способа сортировки результатов</h3>
+          <p class="sorting__text">Сортировка:</p>
+          <ul class="soting__list">
+            <li class="sorting__item">По цене</li>
+            <li class="sorting__item">По типу</li>
+            <li class="sorting__item sorting__item_current">По рейтингу</li>
+          </ul>
+        </div>
+        <div class="controls">
+          <h3 class="visually-hidden">Выбор способа отображения результатов</h3>
+          <span class="controls__btn controls__btn_gain"></span>
+          <span class="controls__btn controls__btn_decrease controls__btn_current"></span>
+        </div>
+        <div class="results">
+          <h3 class="visually-hidden">Список результатов поиска</h3>
+          <ul class="results__list">
+            <li class="results__item">
+              <h4 class="results__name">
+                <a href="#">Amara Resort &amp; Spa</a>
+              </h4>
+              <img class="results__photo" src="http://placehold.it/135x90" width="135" height="90" alt="Amara Resort &amp; SPA">
+              <p class="results__info">
+                <span class="results__info-item">Гостиница</span>
+                <span class="results__info-item">От 4000 р.</span>
+              </p>
+              <p class="results__actions">
+                <a class="results__actions-more" href="#">Подробнее</a>
+                <a class="results__actions-reserv" href="#">Забронировать</a>
+              </p>
+              <div class="results__raiting">
+                <span class="results__raiting-stars">&#9733; &#9733; &#9733; &#9733;</span>
+                <p class="results__raiting-mark">Рейтинг: <span>8,5</span></p>
+              </div>
+            </li>
+            <li class="results__item">
+              <h4 class="results__name">
+                <a href="#">Desert Quail Inn</a>
+              </h4>
+              <img class="results__photo" src="http://placehold.it/135x90" width="135" height="90" alt="Desert Quail Inn">
+              <p class="results__info">
+                <span class="results__info-item">Мотель</span>
+                <span class="results__info-item">От 3000 р.</span>
+              </p>
+              <p class="results__actions">
+                <a class="results__actions-more" href="#">Подробнее</a>
+                <a class="results__actions-reserv" href="#">Забронировать</a>
+              </p>
+              <div class="results__raiting">
+                <span class="results__raiting-stars">&#9733; &#9733; &#9733;</span>
+                <p class="results__raiting-mark">Рейтинг: <span>8,9</span></p>
+              </div>
+            </li>
+            <li class="results__item">
+              <h4 class="results__name">
+                <a href="#">Villas at Poco Diablo</a>
+              </h4>
+              <img class="results__photo" src="http://placehold.it/135x90" width="135" height="90" alt="Villas at Poco Diablo">
+              <p class="results__info">
+                <span class="results__info-item">Апартаменты</span>
+                <span class="results__info-item">От 2000 р.</span>
+              </p>
+              <p class="results__actions">
+                <a class="results__actions-more" href="#">Подробнее</a>
+                <a class="results__actions-reserv" href="#">Забронировать</a>
+              </p>
+              <div class="results__raiting">
+                <span class="results__raiting-stars">&#9733; &#9733;</span>
+                <p class="results__raiting-mark">Рейтинг: <span>9,2</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="tag">
+        <a class="tag__link" href="#">#visitsedona</a>
+      </p>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__button" href="#">Твиттер</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__button" href="#">Фэйсбук</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__button" href="#">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <p class="author">website by
+        <a class="author__link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+
+
