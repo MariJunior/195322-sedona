@@ -21,7 +21,7 @@
             <a class="main-navigation__link" href="map.html">Карта штата</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link_current" href="hotels.html">Гостиницы</a>
+            <a class="main-navigation__link current" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -42,15 +42,27 @@
           <h3 class="visually-hidden">Выбор способа сортировки результатов</h3>
           <p class="sorting__text">Сортировка:</p>
           <ul class="soting__list">
-            <li class="sorting__item">По цене</li>
-            <li class="sorting__item">По типу</li>
-            <li class="sorting__item sorting__item_current">По рейтингу</li>
+            <li class="sorting__item">
+              <a class="sorting__link active" href="#">
+                По цене
+              </a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">
+                По типу
+              </a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">
+                По рейтингу
+              </a>
+            </li>
           </ul>
         </div>
         <div class="controls">
           <h3 class="visually-hidden">Выбор способа отображения результатов</h3>
           <span class="controls__btn controls__btn_gain"></span>
-          <span class="controls__btn controls__btn_decrease controls__btn_current"></span>
+          <span class="controls__btn controls__btn_decrease active"></span>
         </div>
         <div class="results">
           <h3 class="visually-hidden">Список результатов поиска</h3>
@@ -130,8 +142,11 @@
           </li>
         </ul>
       </div>
-      <p class="author">website by
-        <a class="author__link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      <p class="copyright">
+        website by
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          html academy
+        </a>
       </p>
     </footer>
   </body>

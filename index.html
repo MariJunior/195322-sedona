@@ -80,38 +80,45 @@
           </li>
         </ul>
       </section>
-      <section class="reservation-and-map">
+      <section class="reserv-and-map">
         <h2 class="visually-hidden">Бронирование гостиниц и карта штата</h2>
         <p><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" name="hotels search" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
-        <section class="modal modal-reservation">
+        <button class="reserv-and-map__button" type="button">Поиск гостиницы в Седоне</button>
+        <section class="modal modal-reserv">
           <h3 class="visually-hidden">Форма бронирования</h3>
-          <form class="modal-reservation__form" name="reservation" method="post">
+          <form class="modal-reserv__form" name="reservation" method="post">
           </form>
         </section>
-        <div class="reservation-and-map__map">
+        <div class="reserv-and-map__map">
           <h3 class="visually-hidden">Расположение Седоны на карте штата</h3>
           <img src="http://placehold.it/1200x474" alt="Карта штата" width="1200" height="474">
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <p><a class="main-footer__tag-link" href="#">#visitsedona</a></p>
-      <div class="main-footer__socials">
-        <ul class="main-footer__socials-list">
-          <li class="main-footer__socials-item">
-            <a class="main-footer__socials-button" href="#">Твиттер</a>
+      <p class="tag">
+        <a class="tag__link" href="#">#visitsedona</a>
+      </p>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__button" href="#">Твиттер</a>
           </li>
-          <li class="main-footer__socials-item">
-            <a class="main-footer__socials-button" href="#">Фэйсбук</a>
+          <li class="socials__item">
+            <a class="socials__button" href="#">Фэйсбук</a>
           </li>
-          <li class="main-footer__socials-item">
-            <a class="main-footer__socials-button" href="#">Ютуб</a>
+          <li class="socials__item">
+            <a class="socials__button" href="#">Ютуб</a>
           </li>
         </ul>
       </div>
-      <p>website by <a class="main-footer__author-link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></p>
+      <p class="copyright">
+        website by
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          html academy
+        </a>
+      </p>
     </footer>
   </body>
 </html>
