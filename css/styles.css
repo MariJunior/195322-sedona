@@ -258,11 +258,23 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  color: #000000;
+}
+
+.advantages__item-desc .advantages__item-subtitle {
+  color: #ffffff;
 }
 
 .advantages__sublist {
   list-style: none;
   background-color: #ffffff;
+}
+
+.advantages__subitem-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .reserv {
