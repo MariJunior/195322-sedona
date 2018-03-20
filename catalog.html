@@ -10,7 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <nav class="page-navigation">
+        <nav class="page-navigation section-wrap">
           <a class="page-navigation__logo" href="index.html">
             <img src="img/logo.png" width="138" height="70" alt="Логотип сайта, ведёт на главную страницу">
           </a>
@@ -37,7 +37,7 @@
       <main class="container">
         <h1 class="visually-hidden">Поиск и бронирование гостиниц в Седоне</h1>
 
-        <section class="search-filters">
+        <section class="search-filters section-wrap">
           <h2 class="visually-hidden">Парамерты поиска гостиниц</h2>
 
           <form class="search-filters__form" name="filters" action="https://echo.htmlacademy.ru" method="get">
@@ -46,15 +46,15 @@
 
               <ul class="search-filters__list">
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="pool" id="pool" checked>
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="pool" id="pool" checked>
                   <label class="search-filters__label" for="pool">Бассейн</label>
                 </li>
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="parking" id="parking">
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="parking" id="parking">
                   <label class="search-filters__label" for="parking">Парковка</label>
                 </li>
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="wi-fi" id="wi-fi">
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                   <label class="search-filters__label" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
@@ -65,49 +65,52 @@
 
               <ul class="search-filters__list">
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="hotel" id="hotel" checked>
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
                   <label class="search-filters__label" for="hotel">Гостиница</label>
                 </li>
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="motel" id="motel" checked>
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="motel" id="motel" checked>
                   <label class="search-filters__label" for="motel">Мотель</label>
                 </li>
                 <li class="search-filters__item">
-                  <input class="search-filters__input" type="checkbox" name="apartment" id="apartment" checked>
+                  <input class="search-filters__input visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
                   <label class="search-filters__label" for="apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
 
-            <div class="search-filters__wrap">
-              <fieldset class="search-filters__group">
-                <legend class="search-filters__title">Стоимость в сутки (р):</legend>
+            <div class="search-filters__group--price">
+              <div class="search-filters__title">Стоимость в сутки (р):</div>
 
-                <p class="search-filters__range">
-                  <label class="search-filters__range-label_min" for="lower_range">От
-                    <input class="search-filters__range-input input-reset" type="text" name="lower_range" id="lower_range" pattern="[0-9]{1,4}" value="0">
-                  </label>
-                  <label class="search-filters__range-label_max" for="upper_range">До
-                    <input class="search-filters__range-input input-reset" type="text" name="upper_range" id="upper_range" pattern="[0-9]{1,4}" value="3000">
-                  </label>
-                </p>
-
-                <label class="visually-hidden" for="price_range">
-                  Выбор диапазона цен
+              <div class="search-filters__range-wrap">
+                <label class="search-filters__range-label search-filters__range-label--min" for="lower_range">От
+                  <input class="search-filters__range-input" type="text" name="lower_range" id="lower_range" pattern="[0-9]{1,4}" value="0">
                 </label>
-                <input type="range" name="price_range" id="price_range" min="0" max="4000" step="100">
-              </fieldset>
+                <label class="search-filters__range-label search-filters__range-label--max" for="upper_range">До
+                  <input class="search-filters__range-input" type="text" name="upper_range" id="upper_range" pattern="[0-9]{1,4}" value="3000">
+                </label>
+              </div>
 
-              <button class="search-filters__btn btn-reset" type="submit">Показать</button>
+              <div class="search-filters__range-controls">
+                <div class="search-filters__range-controls-scale">
+                  <div class="search-filters__controls-scale-bar"></div>
+                </div>
+                <div class="search-filters__range-toggle search-filters__range-toggle--min"></div>
+                <div class="search-filters__range-toggle search-filters__range-toggle--max"></div>
+              </div>
+
+              <button class="search-filters__btn btn-reset" type="submit">
+                Показать
+              </button>
             </div>
           </form>
         </section>
 
-        <section class="sorting">
+        <section class="sorting section-wrap">
           <h2 class="visually-hidden">Параметры сортировки результатов поиска</h2>
 
           <p class="sorting__desc">Найдено:
-            <span class="sorting__quantity">3</span>
+            <span class="sorting__quantity">3</span> <!-- на будущее, если количество результатов будет  меняться -->
           </p>
 
           <div class="sorting__methods">
@@ -134,33 +137,35 @@
 
           <div class="controls">
             <h3 class="visually-hidden">Выбор способа отображения результатов</h3>
-            <a class="controls__btn controls__btn_gain" href="#">
+            <a class="controls__btn controls__btn--gain" href="#">
               <span class="visually-hidden">По возрастанию</span>
             </a>
-            <a class="controls__btn controls__btn_decrease active" href="#">
+            <a class="controls__btn controls__btn--decrease active" href="#">
               <span class="visually-hidden">По убыванию</span>
             </a>
           </div>
         </section>
 
-        <section class="results">
+        <section class="results section-wrap">
           <h2 class="visually-hidden">Найденные гостиницы</h2>
 
           <ul class="results__list">
             <li class="results__item">
-              <article class="results__card-amara">
-                <h3 class="results__card-name">
-                  <a class="results__card-link" href="#">Amara Resort &amp; Spa</a>
-                </h3>
+              <article class="results__card results__card--amara">
                 <img class="results__card-photo" src="img/amara.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
-                <p class="results__card-info">
-                  <span class="results__info-item">Гостиница</span>
-                  <span class="results__info-item">От 4000 р.</span>
-                </p>
-                <p class="results__card-actions">
-                  <a class="results__card-btn btn-blue" href="#">Подробнее</a>
-                  <a class="results__card-btn btn-brown" href="#">Забронировать</a>
-                </p>
+                <div class="results__card-wrap">
+                  <h3 class="results__card-name">
+                    <a class="results__card-link" href="#">Amara Resort &amp; Spa</a>
+                  </h3>
+                  <p class="results__card-info">
+                    <span class="results__info-item">Гостиница</span>
+                    <span class="results__info-item">От 4000 р.</span>
+                  </p>
+                  <p class="results__card-actions">
+                    <a class="results__card-btn btn-blue" href="#">Подробнее</a>
+                    <a class="results__card-btn btn-brown" href="#">Забронировать</a>
+                  </p>
+                </div>
                 <div class="results__card-raiting">
                   <div class="results__raiting-stars" aria-label="4 звезды">
                     <!-- &#9733; &#9733; &#9733; &#9733; -->
@@ -171,19 +176,21 @@
             </li>
 
             <li class="results__item">
-              <article class="results__card-desert">
-                <h3 class="results__card-name">
-                  <a class="results__card-link" href="#">Desert Quail Inn</a>
-                </h3>
+              <article class="results__card results__card--desert">
                 <img class="results__card-photo" src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
-                <p class="results__card-info">
-                  <span class="results__info-item">Мотель</span>
-                  <span class="results__info-item">От 3000 р.</span>
-                </p>
-                <p class="results__card-actions">
-                  <a class="results__card-btn btn-blue" href="#">Подробнее</a>
-                  <a class="results__card-btn btn-brown" href="#">Забронировать</a>
-                </p>
+                <div class="results__card-wrap">
+                  <h3 class="results__card-name">
+                    <a class="results__card-link" href="#">Desert Quail Inn</a>
+                  </h3>
+                  <p class="results__card-info">
+                    <span class="results__info-item">Мотель</span>
+                    <span class="results__info-item">От 3000 р.</span>
+                  </p>
+                  <p class="results__card-actions">
+                    <a class="results__card-btn btn-blue" href="#">Подробнее</a>
+                    <a class="results__card-btn btn-brown" href="#">Забронировать</a>
+                  </p>
+                </div>
                 <div class="results__card-raiting">
                   <div class="results__raiting-stars" aria-label="3 звезды">
                     <!-- &#9733; &#9733; &#9733; -->
@@ -194,19 +201,21 @@
             </li>
 
             <li class="results__item">
-              <article class="results__card-villas">
-                <h3 class="results__card-name">
-                  <a class="results__card-link"  href="#">Villas at Poco Diablo</a>
-                </h3>
+              <article class="results__card results__card--villas">
                 <img class="results__card-photo" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-                <p class="results__card-info">
-                  <span class="results__info-item">Апартаменты</span>
-                  <span class="results__info-item">От 2000 р.</span>
-                </p>
-                <p class="results__card-actions">
-                  <a class="results__card-btn btn-blue" href="#">Подробнее</a>
-                  <a class="results__card-btn btn-brown" href="#">Забронировать</a>
-                </p>
+                <div class="results__card-wrap">
+                  <h3 class="results__card-name">
+                    <a class="results__card-link"  href="#">Villas at Poco Diablo</a>
+                  </h3>
+                  <p class="results__card-info">
+                    <span class="results__info-item">Апартаменты</span>
+                    <span class="results__info-item">От 2000 р.</span>
+                  </p>
+                  <p class="results__card-actions">
+                    <a class="results__card-btn btn-blue" href="#">Подробнее</a>
+                    <a class="results__card-btn btn-brown" href="#">Забронировать</a>
+                  </p>
+                </div>
                 <div class="results__card-raiting">
                   <div class="results__raiting-stars" aria-label="2 звезды">
                     <!-- &#9733; &#9733; -->
@@ -219,14 +228,14 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="page-footer">
         <p class="tag">
           <a class="tag__link" href="#">#visitsedona</a>
         </p>
 
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__button socials__button_twitter btn-blue" href="#" aria-label="Ссылка на twitter">
+            <a class="socials__button socials__button--twitter btn-blue" href="#" aria-label="Ссылка на twitter">
               <span class="visually-hidden">Наш профиль в Twitter</span>
               <svg class="socials__logo" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
                 <path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
@@ -234,7 +243,7 @@
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__button socials__button_facebook btn-blue" href="#" aria-label="Ссылка на facebook">
+            <a class="socials__button socials__button--facebook btn-blue" href="#" aria-label="Ссылка на facebook">
               <span class="visually-hidden">Наш профиль в Facebook</span>
               <svg class="socials__logo" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                 <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
@@ -242,7 +251,7 @@
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__button socials__button_youtube btn-blue" href="#" aria-label="Ссылка на youtube">
+            <a class="socials__button socials__button--youtube btn-blue" href="#" aria-label="Ссылка на youtube">
               <span class="visually-hidden">Наш канал на Youtube</span>
               <svg class="socials__logo" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16">
                 <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
