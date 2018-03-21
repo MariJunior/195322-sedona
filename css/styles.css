@@ -117,8 +117,8 @@ input[type="radio"].visually-hidden {
 }
 
 .section-wrap {
-  padding-right: 72px; /*6%*/
-  padding-left: 72px; /*6%*/
+  padding-right: 6%; /*72px*/
+  padding-left: 6%; /*72px*/
 }
 
 .page-container {
@@ -167,7 +167,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1056px; /*88%*/
+  width: 100%; /*1056px*/
   min-height: 56px;
   margin: 0;
   padding: 0;
@@ -176,11 +176,11 @@ input[type="radio"].visually-hidden {
 }
 
 .page-navigation__item {
-  width: 240px; /*22.7272%*/
+  width: 22.7272%; /*240px*/
 }
 
 .page-navigation__item:nth-of-type(2) {
-  margin-right: 88px; /*9.091%*/
+  margin-right: 9.0912%; /*88px*/
 }
 
 .page-navigation__item:first-of-type,
@@ -232,7 +232,7 @@ input[type="radio"].visually-hidden {
 /* ----- visitsedona ----- */ /*COMPLETED*/
 
 .tag {
-  width: 400px; /*33.33%*/
+  width: 33.333%; /*400px*/
   margin: 0;
 
   font-weight: 700;
@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 400px; /*33.33%*/
+  width: 33.333%; /*400px*/
   margin: 0;
   padding: 0;
 
@@ -304,7 +304,7 @@ input[type="radio"].visually-hidden {
 /* ----- html academy link ----- */ /*COMPLETED*/
 
 .copyright {
-  width: 400px; /*33.33%*/
+  width: 33.333%; /*400px*/
   margin: 0;
 
   line-height: 26px;
@@ -318,10 +318,9 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 }
 
-/*.copyright__image {
+.copyright__image {
   display: block;
-  margin-left: 6px;
-}*/
+}
 
 .copyright__image path {
   fill: #000000;
@@ -352,6 +351,7 @@ input[type="radio"].visually-hidden {
   background-size: 100% auto, 100% auto;
 }
 
+
 /* ----- list of advantages ----- */
 
 .advantages {
@@ -363,7 +363,7 @@ input[type="radio"].visually-hidden {
 
 .advantages__title,
 .advantages__lead {
-  width: 489px;
+  width: 490px;
   margin: 0 auto;
 
   line-height: 26px;
@@ -401,14 +401,14 @@ input[type="radio"].visually-hidden {
 
 .advantages__item,
 .advantages__item-desc {
-  width: 400px; /*33.33%*/
+  width: 33.333%; /*400px*/
   min-height: 256px;
   /*display: flex;*/
   /*flex-direction: column;*/
-  padding-top: 50px;
-  padding-right: 35px;
-  padding-bottom: 54px;
-  padding-left: 35px;
+  padding-top: 45px;
+  /*padding-right: 5.1%;*/
+  padding-bottom: 64px;
+  /*padding-left: 5.1%;*/
 
   text-align: center;
 }
@@ -420,7 +420,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item--full {
-  width: 1200px; /*100%*/
+  width: 100%; /*1200px*/
   padding: 0;
 }
 
@@ -431,13 +431,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 256px; /*тут должен быть min-height вместо height, чтобы при переполнении блок растягивался,
-  но тогда вылезает изображение в полном размере. Подумать, как этого избежать*/
+  min-height: 256px;
   overflow: hidden;
 }
 
 .advantages__item-subtitle {
-  max-width: 160px;
+  max-width: 155px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 25px;
@@ -459,19 +458,29 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item-text {
-  max-width: 270px;
+  /*max-width: 270px;*/
+  width: 70%;
   margin: 0 auto;
 }
 
 .advantages__item-desc .advantages__item-text {
-  max-width: 305px;
+  /*max-width: 305px;*/
+  width: 75.5%;
+}
+
+.advantages__image-wrap {
+  width: 66.666%;
+  height: 256px; /*800px*/
+  position: relative;
 }
 
 .advantages__image {
-  width: 800px; /*66.66%*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.advantages__image--left {
+.advantages__image-wrap--left {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -493,7 +502,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__subitem {
-  width: 400px; /*33.33%*/
+  width: 33.333%; /*400px*/
   padding-top: 160px;
   padding-bottom: 80px;
 
@@ -524,7 +533,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__subitem-text {
-  max-width: 285px;
+  /*max-width: 285px;*/
+  width: 71.25%;
   margin: 0 auto;
 }
 
@@ -759,7 +769,7 @@ input[type="radio"].visually-hidden {
 .search-filters__group {
   /*width: 255px;*/ /*21.25%*/
   margin: 0;
-  margin-right: 116px; /*%*/
+  margin-right: 115px; /*%*/
   padding: 0;
 
   border: none;
@@ -834,7 +844,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-filters__group--price {
-  width: 318px; /*27.33%*/
+  width: 27.489%; /*27.33% 318px*/
   margin-left: auto;
   margin-right: 0;
   -webkit-box-sizing: content-box;
@@ -883,15 +893,15 @@ input[type="radio"].visually-hidden {
 }
 
 .search-filters__range-label {
-  width: 90px;
+  width: 27.284%; /*90px*/
 }
 
 .search-filters__range-label--min {
-  padding-left: 65px;
+  padding-left: 19.71%; /*65px*/
 }
 
 .search-filters__range-label--max {
-  padding-left: 55px;
+  padding-left: 16.67%; /*55px*/
 }
 
 .search-filters__range-wrap input {
@@ -1116,12 +1126,11 @@ input[type="radio"].visually-hidden {
 }
 
 .results__card-photo {
+  display: block;
+  margin-right: 30px;
   width: 135px;
   height: 90px;
-}
 
-.results__card-wrap {
-  margin-left: 30px; /*или определить картинку как блочный и задать ей margin-right?*/
 }
 
 .results__card-name {
