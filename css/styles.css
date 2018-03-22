@@ -118,8 +118,10 @@ input[type="radio"].visually-hidden {
 }
 
 .section-wrap {
-  padding-right: 6%; /*72px*/
-  padding-left: 6%; /*72px*/
+  padding-right: 6%;
+  /*72px*/
+  padding-left: 6%;
+  /*72px*/
 }
 
 .page-container {
@@ -132,8 +134,9 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+/* ===== HEADER ===== */
 
-/* ===== HEADER ===== */ /*COMPLETED*/
+/*COMPLETED*/
 
 .page-navigation {
   position: relative;
@@ -159,11 +162,13 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap; /*на случай, если пунктов станет больше*/
+      flex-wrap: wrap;
+  /*на случай, если пунктов станет больше*/
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  width: 100%; /*1056px*/
+  width: 100%;
+  /*1056px*/
   min-height: 56px;
   margin: 0;
   padding: 0;
@@ -179,7 +184,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-navigation__item {
-  width: 20%; /*240px*/
+  width: 20%;
+  /*240px*/
 }
 
 .page-navigation__item:first-child,
@@ -193,7 +199,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-navigation__item:nth-child(2) {
-  margin-right: 20%; /*88px*/
+  margin-right: 20%;
+  /*88px*/
   padding-left: 2.841%;
 }
 
@@ -221,7 +228,6 @@ input[type="radio"].visually-hidden {
   color: #766357;
 }
 
-
 /* ===== FOOTER ===== */
 
 .page-footer {
@@ -238,10 +244,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
 }
 
-/* ----- visitsedona ----- */ /*COMPLETED*/
+/* ----- visitsedona ----- */
+
+/*COMPLETED*/
 
 .tag {
-  width: 33.333%; /*400px*/
+  width: 33.333%;
+  /*400px*/
   margin: 0;
 
   font-weight: 700;
@@ -264,14 +273,17 @@ input[type="radio"].visually-hidden {
   color: #bdbbbc;
 }
 
-/* ----- socials links ----- */ /*COMPLETED*/
+/* ----- socials links ----- */
+
+/*COMPLETED*/
 
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  width: 33.333%; /*400px*/
+  width: 33.333%;
+  /*400px*/
   margin: 0;
   padding: 0;
 
@@ -312,10 +324,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-/* ----- html academy link ----- */ /*COMPLETED*/
+/* ----- html academy link ----- */
+
+/*COMPLETED*/
 
 .copyright {
-  width: 33.333%; /*400px*/
+  width: 33.333%;
+  /*400px*/
   margin: 0;
 
   line-height: 26px;
@@ -347,7 +362,6 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
-
 /* ===== INDEX MAIN CONTENT ===== */
 
 .welcome {
@@ -362,7 +376,6 @@ input[type="radio"].visually-hidden {
   background-position: 50% 100%, 50% 21%;
   background-size: 100% auto, auto;
 }
-
 
 /* ----- list of advantages ----- */
 
@@ -415,18 +428,29 @@ input[type="radio"].visually-hidden {
 
 .advantages__item,
 .advantages__item-desc {
-  width: 33.333%; /*400px*/
-  min-height: 256px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.333%;
+  /*400px*/
+  min-height: 256px;
   /* padding-top: 45px; */
   padding-right: 35px;
   /* padding-bottom: 64px; */
   padding-left: 35px;
-  justify-content: center;
-  align-items: center;
 
   text-align: center;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .advantages__item-desc {
@@ -436,7 +460,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item--full {
-  width: 100%; /*1200px*/
+  width: 100%;
+  /*1200px*/
   padding: 0;
 }
 
@@ -490,14 +515,17 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 66.666%;
-  height: 256px; /*800px*/
+  height: 256px;
+  /*800px*/
 }
 
 .advantages__image {
   position: relative;
   top: 50%;
 
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .advantages__image-wrap--left {
@@ -523,7 +551,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__subitem {
-  width: 33.333%; /*400px*/
+  width: 33.333%;
+  /*400px*/
   padding-top: 160px;
   padding-bottom: 80px;
 
@@ -755,6 +784,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   left: 50%;
   z-index: 0;
+
   display: block;
   max-width: none;
   margin-left: -600px;
@@ -772,7 +802,9 @@ input[type="radio"].visually-hidden {
 
 /* ===== CATALOG MAIN CONTENT ===== */
 
-/* ----- search filters form ----- */ /*COMPLETED*/
+/* ----- search filters form ----- */
+
+/*COMPLETED*/
 
 .search-filters {
   padding-top: 27px;
@@ -797,9 +829,11 @@ input[type="radio"].visually-hidden {
 }
 
 .search-filters__group {
-  /*width: 255px;*/ /*21.25%*/
+  /*width: 255px;*/
+  /*21.25%*/
   margin: 0;
-  margin-right: 115px; /*%*/
+  margin-right: 115px;
+  /*%*/
   padding: 0;
 
   border: none;
@@ -879,7 +913,8 @@ input[type="radio"].visually-hidden {
 .search-filters__group--price {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 30.114%; /*318px*/
+  width: 30.114%;
+  /*318px*/
   margin-right: 0;
   margin-left: auto;
 }
@@ -926,19 +961,23 @@ input[type="radio"].visually-hidden {
 }
 
 .search-filters__range-label {
-  width: 27.284%; /*90px*/
+  width: 27.284%;
+  /*90px*/
 }
 
 .search-filters__range-label--min {
-  padding-left: 19.71%; /*65px*/
+  padding-left: 19.71%;
+  /*65px*/
 }
 
 .search-filters__range-label--max {
-  padding-left: 16.67%; /*55px*/
+  padding-left: 16.67%;
+  /*55px*/
 }
 
 .search-filters__range-wrap input {
-  width: 44.444%; /*40px*/
+  width: 44.444%;
+  /*40px*/
   margin: 0;
 
   font: inherit;
@@ -1014,7 +1053,9 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
 }
 
-/* ----- sorting block ----- */ /*COMPLETED*/
+/* ----- sorting block ----- */
+
+/*COMPLETED*/
 
 .sorting {
   display: -webkit-box;
@@ -1137,7 +1178,9 @@ input[type="radio"].visually-hidden {
   border-bottom-color: #81b3d2;
 }
 
-/* ----- results of search ----- */ /*COMPLETED*/
+/* ----- results of search ----- */
+
+/*COMPLETED*/
 
 .results {
   background-color: #ffffff;
