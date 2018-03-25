@@ -372,7 +372,7 @@ input[type="radio"].visually-hidden {
   background-image: url("..//img/decor_prongs.png"), url("..//img/mountains.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 21%;
-  background-size: 100% auto, cover;
+  background-size: 100% 57px, cover; /*для маски лучше бы высоту auto задать :( */
 }
 
 /* ----- list of advantages ----- */
