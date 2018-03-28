@@ -134,7 +134,7 @@
             Поиск гостиницы в Седоне
           </button> <!-- позже заменить на ссылку -->
 
-          <div class="reserv-modal">
+          <div class="reserv-modal reserv-modal--show">
             <h3 class="visually-hidden">Форма бронирования</h3>
             <form class="reserv-modal__form" name="reservation" action="https://echo.htmlacademy.ru" method="get">
               <div class="reserv-modal__group">
@@ -166,13 +166,13 @@
               <div class="reserv-modal__group reserv-modal__group--small">
                 <label class="reserv-modal__label" for="adults">Взрослые:</label>
                 <p class="reserv-modal__input-wrap">
-                  <button class="reserv-modal__btn btn-reset" type="button" aria-label="Меньше">
+                  <button class="reserv-modal__btn reserv-modal__btn--minus btn-reset" type="button" aria-label="Меньше">
                     <svg width="11" height="11">
                       <line x1="0" y1="5.5" x2="11" y2="5.5" stroke="#a9a9a9" stroke-width="3"/>
                     </svg>
                   </button>
                   <input class="reserv-modal__input input-reset" type="text" name="adults" id="adults" pattern="^[ 0-9]+$" value="2">
-                  <button class="reserv-modal__btn btn-reset" type="button" aria-label="Больше">
+                  <button class="reserv-modal__btn reserv-modal__btn--plus btn-reset" type="button" aria-label="Больше">
                     <svg width="11" height="11">
                         <line x1="0" y1="5.5" x2="11" y2="5.5" stroke="#a9a9a9" stroke-width="3"/>
                         <line x1="5.5" y1="0" x2="5.5" y2="11" stroke="#a9a9a9" stroke-width="3" />
@@ -184,13 +184,13 @@
               <div class="reserv-modal__group reserv-modal__group--small">
                 <label class="reserv-modal__label" for="children">Дети:</label>
                 <p class="reserv-modal__input-wrap">
-                  <button class="reserv-modal__btn btn-reset" type="button" aria-label="Меньше">
+                  <button class="reserv-modal__btn reserv-modal__btn--minus btn-reset" type="button" aria-label="Меньше">
                     <svg width="11" height="11">
                       <line x1="0" y1="5.5" x2="11" y2="5.5" stroke="#a9a9a9" stroke-width="3"/>
                     </svg>
                   </button>
                   <input class="reserv-modal__input input-reset" type="text" name="children" id="children" pattern="^[ 0-9]+$" value="0">
-                  <button class="reserv-modal__btn btn-reset" type="button" aria-label="Больше">
+                  <button class="reserv-modal__btn reserv-modal__btn--plus btn-reset" type="button" aria-label="Больше">
                     <svg width="11" height="11">
                         <line x1="0" y1="5.5" x2="11" y2="5.5" stroke="#a9a9a9" stroke-width="3"/>
                         <line x1="5.5" y1="0" x2="5.5" y2="11" stroke="#a9a9a9" stroke-width="3" />
@@ -206,12 +206,12 @@
 
         <section class="map">
             <h2 class="visually-hidden">Расположение Седоны на карте штата</h2>
-            <img class="map__image" src="img/map.png" width="1200" height="473" alt="Карта штата Аризона. Въезд в Седону находится на пересечении федеральной трассы 89А и 179 хайвея">
+            <img class="map__image" src="img/map.png" width="1200" height="593" alt="Карта штата Аризона. Въезд в Седону находится на пересечении федеральной трассы 89А и 179 хайвея">
             <!-- <iframe class="map__ifame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837680.5398945258!2d-112.28952383180786!3d34.901690930119585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1521021324907" aria-label="Карта штата Аризона. Въезд в Седону находится на пересечении федеральной трассы 89А и 179 хайвея"></iframe> -->
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--index">
         <p class="tag">
           <a class="tag__link" href="#">#visitsedona</a>
         </p>
@@ -254,5 +254,39 @@
         </p>
       </footer>
     </div>
+
+
+    <!-- SCRIPTS -->
+    <script>
+      var searchButton = document.querySelector(".reserv__btn");
+      var popupSection = document.querySelector(".reserv-modal");
+
+      var form = popupSection.querySelector(".reserv-modal__form");
+      var formFields = popupSection.querySelectorAll(".reserv-modal__input");
+
+      searchButton.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popupSection.classList.toggle("reserv-modal--show");
+        popupSection.classList.toggle("reserv-modal--hide");
+      });
+
+      if(popupSection.classList.contains("reserv-modal--show")) {
+          popupSection.querySelector(".reserv-modal__input").focus();
+      };
+
+      form.addEventListener("submit", function(evt) {
+        for(var i = 0, len = formFields.length; i < len; i++) {
+          if(!formFields[i].value) {
+            evt.preventDefault();
+            formFields[i].focus();
+            formFields[i].classList.add("reserv-modal__input--error");
+            popupSection.classList.add("reserv-modal--error");
+            formFields[i].change = function () {
+              formFields[i].classList.remove("reserv-modal--error");
+            };
+          };
+        }
+      });
+    </script>
   </body>
 </html>

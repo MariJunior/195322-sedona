@@ -238,6 +238,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
 }
 
+.page-footer--index {
+  position: relative;
+  z-index: 50;
+  margin-top: -120px;
+  opacity: 0.9;
+}
+
 /* ----- visitsedona ----- */
 
 /*COMPLETED*/
@@ -292,6 +299,8 @@ input[type="radio"].visually-hidden {
 }
 
 .socials__item {
+  margin-top: 3px;
+  margin-bottom: 3px; /*отступы нужны, чтобы отталкивались друг от друга при переполнении*/
   width: 46px;
   height: 48px;
 }
@@ -583,6 +592,7 @@ input[type="radio"].visually-hidden {
 /* ----- reservation ----- */
 
 .reserv {
+  position: relative;
   width: 568px;
   margin: 0 auto;
   padding-top: 50px;
@@ -631,7 +641,78 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  transform-origin: top;
 }
+
+@keyframes show-form {
+  0% {
+    transform: scaleY(0) translateY(-100%);
+  }
+  50% {
+    transform: scaleY(1) translateY(20%);
+  }
+  70% {
+    transform: scaleY(.8) translateY(0%);
+  }
+  90% {
+    transform: scaleY(1) translateY(10%);
+  }
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+@keyframes hide-form {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+  100% {
+    transform: scaleY(0) translateY(-100%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+
+}
+
+
+.reserv-modal--show {
+  animation-name: show-form;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+}
+
+.reserv-modal--hide {
+  animation-name: hide-form;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+.reserv-modal--error {
+  animation-name: shake;
+  animation-duration: 600ms;
+}
+
 
 .reserv-modal__form {
   display: -webkit-box;
@@ -685,6 +766,10 @@ input[type="radio"].visually-hidden {
 
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
+}
+
+.reserv-modal__input--error {
+  border-color: #663d15;
 }
 
 .reserv-modal__btn {
@@ -768,18 +853,18 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
 
-  height: 473px;
+  height: 593px;
   overflow: hidden;
 }
 
 .map__image {
-  position: relative;
+  position: absolute;
   left: 50%;
-  z-index: 0;
+  z-index: 1;
 
   display: block;
   max-width: none;
-  margin-left: -600px;
+  transform: translateX(-50%);
 }
 
 /*.map__ifame {
