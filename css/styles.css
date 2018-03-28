@@ -768,10 +768,6 @@ input[type="radio"].visually-hidden {
   -ms-flex-positive: 1;
 }
 
-.reserv-modal__input--error {
-  border-color: #663d15;
-}
-
 .reserv-modal__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,7 +863,7 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
 }
 
-/*.map__ifame {
+.map__ifame {
   position: absolute;
   z-index: 10;
   top: 0;
@@ -875,7 +871,7 @@ input[type="radio"].visually-hidden {
   height: 100%;
 
   border: none;
-}*/
+}
 
 /* ===== CATALOG MAIN CONTENT ===== */
 
