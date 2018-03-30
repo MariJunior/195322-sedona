@@ -4,8 +4,6 @@
 
   var form = popupSection.querySelector(".reserv-modal__form");
   var formFields = popupSection.querySelectorAll(".reserv-modal__input");
-  // var arriceDate = popupSection.querySelector("[name=arrival_date]");
-  // var departureDate = popupSection.querySelector("[name=departure_date]");
   var adults = popupSection.querySelector("[name=adults]");
   var childrens = popupSection.querySelector("[name=children]");
 
