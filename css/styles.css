@@ -52,9 +52,8 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip: rect(0 0 0 0);
-          clip-path: inset(100%);
-
   -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .input-reset {
@@ -118,8 +117,8 @@ input[type="radio"].visually-hidden {
 }
 
 .section-wrap {
-  padding-right: 6%; /*72px*/
-  padding-left: 6%; /*72px*/
+  padding-right: 6%;
+  padding-left: 6%;
 }
 
 .page-container {
@@ -133,8 +132,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* ===== HEADER ===== */
-
-/*COMPLETED*/
 
 .page-navigation {
   position: relative;
@@ -165,7 +162,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%; /*1056px*/
+  width: 100%;
   min-height: 56px;
   margin: 0;
   padding: 0;
@@ -175,7 +172,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-navigation__item {
-  width: 20%; /*240px*/
+  width: 20%;
 }
 
 .page-navigation__item:first-child,
@@ -190,7 +187,6 @@ input[type="radio"].visually-hidden {
 
 .page-navigation__item:nth-child(2) {
   margin-right: 20%;
-  /*88px*/
   padding-left: 2.841%;
 }
 
@@ -244,11 +240,8 @@ input[type="radio"].visually-hidden {
 
 /* ----- visitsedona ----- */
 
-/*COMPLETED*/
-
 .tag {
   width: 33.333%;
-  /*400px*/
   margin: 0;
 
   font-weight: 700;
@@ -273,8 +266,6 @@ input[type="radio"].visually-hidden {
 
 /* ----- socials links ----- */
 
-/*COMPLETED*/
-
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,7 +277,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   -ms-flex-line-pack: justify;
   align-content: space-between;
-  width: 33.333%; /*400px*/
+  width: 33.333%;
   margin: 0;
   padding: 0;
 
@@ -327,11 +318,8 @@ input[type="radio"].visually-hidden {
 
 /* ----- html academy link ----- */
 
-/*COMPLETED*/
-
 .copyright {
   width: 33.333%;
-  /*400px*/
   margin: 0;
 
   line-height: 26px;
@@ -371,11 +359,11 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
 
-  background-color: #7a909e;
+  background-color: #82a4c5;
   background-image: url("..//img/decor_prongs.png"), url("..//img/mountains.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 21%;
-  background-size: 100% 57px, cover; /*для маски лучше бы высоту auto задать :( */
+  background-size: 100% 57px, cover; /*для маски лучше бы высоту auto задать, но ТЗ :( */
 }
 
 /* ----- list of advantages ----- */
@@ -390,7 +378,7 @@ input[type="radio"].visually-hidden {
 
 .advantages__title,
 .advantages__lead {
-  width: 490px;
+  width: 495px;
   margin: 0 auto;
 
   line-height: 26px;
@@ -428,7 +416,7 @@ input[type="radio"].visually-hidden {
 
 .advantages__item,
 .advantages__item-desc {
-  width: 33.333%; /*400px*/
+  width: 33.333%;
   min-height: 256px;
   padding-right: 35px;
   padding-bottom: 35px;
@@ -450,7 +438,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item--full {
-  width: 100%; /*1200px*/
+  width: 100%;
   padding: 0;
 
   background-color: #81b3d2;
@@ -464,7 +452,6 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  /* min-height: 256px; */
   overflow: hidden;
 }
 
@@ -491,18 +478,18 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item-text {
-  max-width: 270px; /* width: 70%; */
+  max-width: 270px;
   margin: 0 auto;
 }
 
 .advantages__item-desc .advantages__item-text {
-  max-width: 305px; /* width: 75.5%; */
+  max-width: 305px;
 }
 
 .advantages__image-wrap {
   position: relative;
 
-  width: 66.666%; /*800px*/
+  width: 66.666%;
   height: 256px;
 }
 
@@ -537,7 +524,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__subitem {
-  width: 33.333%; /*400px*/
+  width: 33.333%;
   min-height: 330px;
   padding-top: 162px;
   padding-bottom: 60px;
@@ -569,7 +556,6 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__subitem-text {
-  /*max-width: 285px;*/
   width: 71.25%;
   margin: 0 auto;
 }
@@ -941,15 +927,13 @@ input[type="radio"].visually-hidden {
 
 /* ----- search filters form ----- */
 
-/*COMPLETED*/
-
 .search-filters {
   padding-top: 27px;
   padding-bottom: 31px;
 
   color: #ffffff;
 
-  background-color: #2a3e45;
+  background-color: #7695af;
   background-image: url(..//img/mountains_blur.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1032,7 +1016,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-filters__input:focus + .search-filters__label {
-  /* border-color: #663d15; */
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -1058,7 +1041,7 @@ input[type="radio"].visually-hidden {
 .search-filters__group--price {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 30.114%; /*318px*/
+  width: 30.114%;
   min-width: 222px;
   margin-right: 0;
   margin-left: auto;
@@ -1107,12 +1090,12 @@ input[type="radio"].visually-hidden {
 
 .search-filters__range-label--min {
   width: 29.3%;
-  padding-left: 20.7%; /*65px*/
+  padding-left: 20.7%;
 }
 
 .search-filters__range-label--max {
   width: 33%;
-  padding-left: 17%; /*55px*/
+  padding-left: 17%;
 }
 
 .search-filters__range-input {
@@ -1198,8 +1181,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* ----- sorting block ----- */
-
-/*COMPLETED*/
 
 .sorting {
   display: -webkit-box;
@@ -1325,8 +1306,6 @@ input[type="radio"].visually-hidden {
 
 /* ----- results of search ----- */
 
-/*COMPLETED*/
-
 .results {
   background-color: #ffffff;
 }
@@ -1382,6 +1361,15 @@ input[type="radio"].visually-hidden {
 
 .results__card-link {
   color: #000000;
+}
+
+.results__card-link:hover,
+.results__card-link:focus {
+  color: #81b3d2;
+}
+
+.results__card-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .results__card-info {
