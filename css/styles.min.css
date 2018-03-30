@@ -176,7 +176,7 @@ img{max-width:100%;height:auto}
 .sorting__methods-btn:active{color:#000000;border:none}
 .sorting__methods-btn.active{color:#81b3d2;border:none;cursor:default}
 .controls{margin-left:auto}
-.controls__btn{display:inline-block;width:11px;height:10px;border-right:5px solid transparent;border-bottom:11px solid #cacaca;border-left:5px solid transparent}
+.controls__btn{display:inline-block;width:11px;height:10px;vertical-align:baseline;border-right:5px solid transparent;border-bottom:11px solid #cacaca;border-left:5px solid transparent}
 .controls__btn--gain{margin-right:10px}
 .controls__btn--decrease{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
 .controls__btn:hover,.controls__btn:focus{border-bottom-color:#000000}
@@ -197,9 +197,9 @@ img{max-width:100%;height:auto}
 .results__card-actions{margin:0;padding:0}
 .results__card-btn{display:inline-block;padding:3px 17px;vertical-align:baseline;font-weight:700}
 .results__card-btn:not(:last-child){margin-right:3px}
-.results__card-raiting{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;margin-left:auto}
-.results__raiting-stars{height:17px;margin-bottom:47px;background-image:url(..//img/star.svg);background-repeat:space}
-.results__card--amara .results__raiting-stars{width:89px}
-.results__card--desert .results__raiting-stars{width:67px}
-.results__card--villas .results__raiting-stars{width:44px}
-.results__raiting-mark{margin:0;background-color:#f2f2f2;padding:3px 13px 3px 16px}
+.results__card-rating{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;margin-left:auto}
+.results__rating-stars{height:17px;margin-bottom:47px;background-image:url(..//img/star.svg);background-repeat:space}
+.results__card--amara .results__rating-stars{width:89px}
+.results__card--desert .results__rating-stars{width:67px}
+.results__card--villas .results__rating-stars{width:44px}
+.results__rating-mark{margin:0;background-color:#f2f2f2;padding:3px 13px 3px 16px}

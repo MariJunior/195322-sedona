@@ -1277,6 +1277,8 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
 
+  vertical-align: baseline;
+
   border-right: 5px solid transparent;
   border-bottom: 11px solid #cacaca;
   border-left: 5px solid transparent;
@@ -1402,7 +1404,7 @@ input[type="radio"].visually-hidden {
   margin-right: 3px;
 }
 
-.results__card-raiting {
+.results__card-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1417,7 +1419,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.results__raiting-stars {
+.results__rating-stars {
   height: 17px;
   margin-bottom: 47px;
 
@@ -1425,19 +1427,19 @@ input[type="radio"].visually-hidden {
   background-repeat: space;
 }
 
-.results__card--amara .results__raiting-stars {
+.results__card--amara .results__rating-stars {
   width: 89px;
 }
 
-.results__card--desert .results__raiting-stars {
+.results__card--desert .results__rating-stars {
   width: 67px;
 }
 
-.results__card--villas .results__raiting-stars {
+.results__card--villas .results__rating-stars {
   width: 44px;
 }
 
-.results__raiting-mark {
+.results__rating-mark {
   margin: 0;
   padding-top: 3px;
   padding-right: 13px;
